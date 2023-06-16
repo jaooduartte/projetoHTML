@@ -1,0 +1,169 @@
+@font-face {    /* Fonte adicionada */
+    font-family: 'Bungee Color';
+    src: url('/fonts/bungee.ttf');
+}
+
+@font-face {    /* Fonte adicionada */
+
+    font-family: 'Aoboshi One';
+    src: url('/fonts/aoboshi-one-regular.ttf');
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9999;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Restante do seu código CSS existente */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Bungee Color';
+    color: #39A062;
+    font-size: 30px;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-nav {
+display: flex;
+    align-items: center;
+}
+
+.custom-toggler {
+    order: 3;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .search-container input[type="text"] {
+        margin-right: 10px;
+    }
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Aoboshi One';
+}
+
+.menu li {
+    max-width: 18%;
+    margin-right: 20px;
+    
+}
+
+.menu li a {        /* Personalização dos textos do menu */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+    color: #fff;
+    height: 50px;
+    
+}
+
+.menu li a img{     /* Personalização dos icones do menu */
+    margin-bottom: 5px;
+    width: 25px;
+    height: 25px;
+    filter: invert(00%) sepia(0%) saturate(0%) hue-rotate(0deg);
+      
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul li a:hover {
+    background-color: none;
+    color: #39A062;
+}
+
+hr {
+    background-color: black;
+}
+
+/* Sessão focada no campo de busca... */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    width: 200px;
+}
+
+.search-container button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    width: 200px;
+}
+
+.search-container button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
